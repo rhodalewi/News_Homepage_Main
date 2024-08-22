@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-color: hsl(36, 100%, 99%);
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 3rem auto 8rem;
+}
+
+.opacity {
+    background-color: hsla(240, 3%, 64%, 0.959);
+}
+
+/* HEADER STYLE */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.logo {
+    width: 55px;
+    height: 32px;
+    
+}
+
+.icon-menu {
+    cursor: pointer;
+}
+
+.closeMenu {
+    display: inline-block;
+    justify-content: right;
+    margin-bottom: 8rem;
+    position: relative;
+    left: 168px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mobileLinks {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: hsl(36, 100%, 99%);
+    padding: 3rem 0 0 2.55rem;
+    transition: transform 0.6s ease;
+    transform: translate(100%);
+    z-index: 2;
+}
+
+.mobileLinks.show {
+    display: block;
+    transform: translateX(0);
+}
+
+.mobileLinks a{
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    margin-bottom: 26px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: hsl(5, 85%, 63%)
+}
+
+.links {
+    display: none;
+}
+
+
+/* MAIN STYLE */
+main img {
+    display: block;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.main-grid2 h1 {
+    font-size: 44px;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    line-height: 44px;
+}
+
+.main-grid2 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(236, 13%, 42%);
+    line-height: 24px;
+    margin: 1.75rem 0 2.5rem;
+}
+
+button {
+    padding: 14px 32px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    color: hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
+    margin-bottom: 6.5rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+.main-grid3 {
+    background-color: hsl(240, 100%, 5%);
+    padding: 2.5rem 2.2rem 0.75rem;
+    margin-bottom: 7rem;
+}
+
+.main-grid3 h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+}
+
+.grid3 a {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.grid3 a:hover,
+.grid3 a:active,
+.grid3 a:focus {
+    color: hsl(35, 77%, 62%);
+}
+
+.grid3 p {
+    margin: 0.75rem 0 2rem;
+    font-size: 15px;
+    line-height: 28px;
+    color: hsl(235, 5%, 56%);
+}
+
+.first-grid3,
+.second-grid3 {
+    padding-bottom: 1.25rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.5px solid hsl(236, 6%, 50%);
+}
+
+
+/* FOOTER STYLE */
+footer img {
+    width: 102px;
+    height: 132px;
+}
+
+.footers {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+    margin-bottom: 3.5rem;
+    width: fit-content;
+}
+
+footer h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(5, 85%, 63%);
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    font-weight: 900; 
+}
+
+footer p {
+    font-size: 15px;
+    color: hsl(230, 12%, 61%);
+    line-height: 24px;
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 80%;
+        margin: 7rem auto;
+    }
+
+/* HEADER STYLE */
+
+    header {
+        margin-bottom: 4.75rem; 
+    }
+
+    .logo {
+        width: 65px;
+        height: 40px;
+    }
+
+    .links {
+        display: grid;
+        position: relative;
+        grid-auto-flow: column;
+        column-gap: 3.5rem;
+        background-color: none;
+        padding: 0;
+        height: auto;
+        width: auto;
+        background-color: none;
+        transition: none;
+    }
+
+
+    .links a {
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+        color: hsl(5, 85%, 63%)
+    }
+
+    .icon-menu,
+    .mobileLinks {
+        display: none;
+    }
+
+/* MAIN STYLE */
+    main {
+        display: grid;
+        grid-template-columns: 66% 30.5%;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    main img {
+      content: url(./assets/images/image-web-3-desktop.jpg);
+      width: 100%;
+    }
+
+    .main-grid2 {
+        display: grid;
+        grid-template-columns: 48% 52%; 
+        width: fit-content;
+    }
+
+    .main-grid2 h1 {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .main-grid2 p {
+        margin-top: 0;
+        font-size: 17px;
+        line-height: 26px;  
+    }
+
+    button {
+        padding: 16px 40px;
+        margin-bottom: 0;
+    }
+
+    .main-grid3 {
+        grid-column-start: 2;
+        grid-row: 1 / span 2;
+        margin-bottom: 0;
+    }
+
+    .main-grid3 h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .grid3 p {
+        font-size: 15px;
+    }
+  
+/* FOOTER STYLE */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+    }
+
+    footer p {
+        width: 228px;
+    }
+    
+    footer img {
+        height: 124px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    display: none;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
