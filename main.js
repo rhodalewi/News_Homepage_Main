@@ -20,7 +20,6 @@ const categoriesLink = document.querySelector('.categories');
 
 
 
-
 // LINK BUTTON
 homeLink.addEventListener('click', (e) => {
     e.preventDefault();
@@ -51,5 +50,3 @@ categoriesLink.addEventListener('click', (e) => {
     mobileLinks.classList.remove('show');
     container.classList.remove('opacity');
 });
-
-
